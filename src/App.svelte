@@ -1,5 +1,7 @@
 <script>
-  import hljs from "highlight.js";
+  import hljs from 'highlight.js/lib/core';
+  import jayson from 'highlight.js/lib/languages/json';
+  hljs.registerLanguage('javascript', jayson);
 
   export let data; 
   export let prettyHtml; 
@@ -39,9 +41,6 @@
 
 <style>
   
-  .m-0 {
-    margin: 0;
-  }
   pre {
     margin: 0;
   }
