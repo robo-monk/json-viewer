@@ -1,7 +1,7 @@
 <script>
   import hljs from 'highlight.js/lib/core';
   import jayson from 'highlight.js/lib/languages/json';
-  hljs.registerLanguage('javascript', jayson);
+  hljs.registerLanguage('json', jayson);
 
   export let data; 
   export let prettyHtml; 
