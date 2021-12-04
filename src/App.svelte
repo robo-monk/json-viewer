@@ -6,7 +6,12 @@
 	export let data;
 	export let prettyHtml;
 
-	navigator.clipboard.readText().then((d) => (data = d));
+	function update() {
+		navigator.clipboard.readText().then((d) => (data = d));
+	}
+	update()
+	setInterval(update, 500)
+
 	$: {
 		let json;
 		try {
