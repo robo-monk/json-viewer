@@ -10,7 +10,7 @@
 		navigator.clipboard.readText().then((d) => (data = d));
 	}
 	update()
-	setInterval(update, 500)
+	/*setInterval(update, 500)*/
 
 	$: {
 		let json;
